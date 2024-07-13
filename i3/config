@@ -112,7 +112,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "Terminal "
 set $ws2 "Firefox "
-set $ws3 "Thunderbird"
+set $ws3 "Thunderbird "
 set $ws4 "Zoom "
 set $ws5 "Spotify "
 set $ws6 "6"
@@ -210,9 +210,3 @@ bar {
 }
 
 for_window [class="^.*"] border pixel 0
-
-exec gnome-terminal
-exec firefox
-exec thunderbird
-exec zoom
-exec spotify
