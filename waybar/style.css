@@ -1,0 +1,38 @@
+@define-color text-color silver;
+
+* {
+    font-family: Fira Code;
+    font-size: 15px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @text-color;
+}
+
+#workspaces button {
+    color: @text-color;
+    border: none;
+}
+
+#workspaces button:hover {
+    background: rgb(25, 25, 25);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.modules-left {
+    margin-left: 15px;
+}
+
+.modules-center {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modules-left, .modules-center {
+    margin-top: 15px;
+    background-color: black;
+    border-radius: 15px;
+}
