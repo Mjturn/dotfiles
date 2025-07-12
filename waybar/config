@@ -33,7 +33,7 @@
 
     "clock": {
         "format": "{:%I:%M %p}",
-        "format-alt": "{:%A, %B%e, %Y}",
+        "format-alt": "{:%A, %B %d, %Y}",
         "tooltip": false
     }
 }
