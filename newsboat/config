@@ -1,0 +1,13 @@
+auto-reload yes
+
+bind-key j down
+bind-key k up
+
+color title black color202 bold
+color listfocus color202 black
+color listfocus_unread color202 black bold
+color info black color202 bold
+
+macro , open-in-browser
+macro a set browser "tsp yt-dlp --embed-metadata -xic -f bestaudio/best --restrict-filenames" ; open-in-browser ; set browser linkhandler
+macro v set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler
