@@ -6,9 +6,13 @@
     ],
 
     "modules-center": [
-        "cpu",
-        "memory",
         "clock"
+    ],
+
+    "modules-right": [
+         "cpu",
+         "memory",
+         "disk"
     ],
 
     "hyprland/workspaces": {
@@ -22,18 +26,22 @@
         }
     },
 
-    "cpu": {
-        "format": "{usage}% ",
+
+    "clock": {
+        "format": "{:%A, %B %d, %Y - %I:%M %p}",
         "tooltip": false
+    },
+
+    "cpu": {
+         "format": "{usage}% ",
+         "tooltip": false
     },
 
     "memory": {
-        "format": "{}% "
+         "format": "{}% "
     },
 
-    "clock": {
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%A, %B %d, %Y}",
-        "tooltip": false
+    "disk": {
+         "format": "{used} / {total} "
     }
 }

@@ -1,38 +1,59 @@
-@define-color text-color silver;
+@define-color default-text-color rgb(198, 208, 245);
 
 * {
-    font-family: Fira Code;
-    font-size: 12.5px;
+     font-family: Fira Code;
+     font-size: 0.75rem;
 }
 
 window#waybar {
     background: transparent;
-    color: @text-color;
+    color: @default-text-color;
 }
 
 #workspaces button {
-    color: @text-color;
+    color: @default-text-color;
     border: none;
 }
 
 #workspaces button:hover {
     background: rgb(25, 25, 25);
     border: none;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     box-shadow: none;
 }
 
 .modules-left {
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 
-.modules-center {
-    padding-left: 15px;
-    padding-right: 15px;
+.modules-right {
+     margin-right: 1rem;
 }
 
-.modules-left, .modules-center {
-    margin-top: 15px;
-    background-color: black;
-    border-radius: 10px;
+.modules-center, .modules-right {
+     padding-left: 1rem;
+     padding-right: 1rem;
+}
+
+.modules-left, .modules-center, .modules-right {
+    background-color: rgb(16, 16, 16);
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+#cpu {
+     color: rgb(234, 153, 156);
+}
+
+#memory {
+     color: rgb(229, 200, 144);
+}
+
+#disk {
+     color: rgb(166, 209, 137);
+}
+
+#cpu, #memory, #disk {
+     padding-left: 0.25rem;
+     padding-right: 0.25rem;
 }
