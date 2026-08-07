@@ -42,8 +42,7 @@ case "$1" in
      "w")
           while read file;
           do
-               filepath=~/Pictures/Wallpapers/$file
-               filepath=$(printf "%s\n" "$filepath" | sed "s|^$HOME|~|")
+               filepath=$(printf "%s\n" "$file" | sed "s|^$HOME|~|")
                hyprctl hyprpaper wallpaper "DVI-D-1, $filepath"
                sed -i "s|~.*|$filepath|" ~/.config/hypr/hyprpaper.conf
           done
