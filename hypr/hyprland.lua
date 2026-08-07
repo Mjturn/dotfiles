@@ -270,6 +270,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(web_browser))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("steam"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("nsxiv -t ~/Pictures/Wallpapers/*"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/Scripts/wallpaper-setter/script.sh"))
 
 -- Move focus with mainMod + arrow keys
