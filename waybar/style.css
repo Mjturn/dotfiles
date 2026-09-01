@@ -1,59 +1,47 @@
-@define-color default-text-color rgb(198, 208, 245);
+@define-color default-text-color white;
 
 * {
      font-family: Fira Code;
-     font-size: 0.75rem;
+     font-size: 11px;
 }
 
 window#waybar {
-    background: transparent;
-    color: @default-text-color;
+     background: transparent;
+     color: @default-text-color;
 }
 
 #workspaces button {
-    color: @default-text-color;
-    border: none;
+     color: @default-text-color;
+     border: none;
 }
 
 #workspaces button:hover {
-    background: rgb(25, 25, 25);
-    border: none;
-    border-radius: 0.25rem;
-    box-shadow: none;
+     background: rgb(15, 15, 15);
+     border: none;
+     border-radius: 5px;
+     box-shadow: none;
 }
 
 .modules-left {
-    margin-left: 1rem;
+     margin-left: 15px;
 }
 
 .modules-right {
-     margin-right: 1rem;
+     margin-right: 15px;
 }
 
 .modules-center, .modules-right {
-     padding-left: 1rem;
-     padding-right: 1rem;
+     padding-left: 15px;
+     padding-right: 15px;
 }
 
 .modules-left, .modules-center, .modules-right {
-    background-color: rgb(16, 16, 16);
-    margin-top: 1rem;
-    border-radius: 0.25rem;
-}
-
-#cpu {
-     color: rgb(234, 153, 156);
-}
-
-#memory {
-     color: rgb(229, 200, 144);
-}
-
-#disk {
-     color: rgb(166, 209, 137);
+     background-color: black;
+     margin-top: 15px;
+     border-radius: 5px;
 }
 
 #cpu, #memory, #disk {
-     padding-left: 0.25rem;
-     padding-right: 0.25rem;
+     padding-left: 3px;
+     padding-right: 3px;
 }

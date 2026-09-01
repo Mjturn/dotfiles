@@ -1,4 +1,5 @@
-PROMPT="%n@%m %~ %# "
+readonly orange=#ff3200
+PROMPT="%F{$orange}%n%f@%F{$orange}%m%f %~ %# "
 
 autoload -Uz compinit
 compinit
