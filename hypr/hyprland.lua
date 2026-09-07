@@ -266,12 +266,13 @@ local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"))
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"))
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
+
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("mpc toggle"))
 
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(web_browser))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("steam"))
@@ -280,10 +281,10 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("nsxiv -t ~/Pictures/Wallpapers/*"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/Scripts/wallpaper-setter/script.sh"))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + k",    hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + j",  hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + K",    hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + J",  hl.dsp.focus({ direction = "down" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
